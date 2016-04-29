@@ -40,8 +40,16 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // textBox1
@@ -139,7 +147,7 @@
             this.textBox3.Location = new System.Drawing.Point(9, 83);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(327, 22);
-            this.textBox3.TabIndex = 3;
+            this.textBox3.TabIndex = 2;
             this.textBox3.Text = "21";
             // 
             // button2
@@ -147,7 +155,7 @@
             this.button2.Location = new System.Drawing.Point(9, 128);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(327, 23);
-            this.button2.TabIndex = 4;
+            this.button2.TabIndex = 3;
             this.button2.Text = "Compute";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -161,11 +169,80 @@
             this.label5.TabIndex = 5;
             this.label5.Text = "Experience Required: 441.";
             // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.button3);
+            this.groupBox3.Controls.Add(this.label8);
+            this.groupBox3.Controls.Add(this.textBox5);
+            this.groupBox3.Controls.Add(this.label7);
+            this.groupBox3.Controls.Add(this.textBox4);
+            this.groupBox3.Controls.Add(this.label6);
+            this.groupBox3.Location = new System.Drawing.Point(360, 12);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(306, 165);
+            this.groupBox3.TabIndex = 5;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Compute Mob Kills Required";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(6, 18);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(160, 17);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "Enter your current level:";
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(9, 38);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(291, 22);
+            this.textBox4.TabIndex = 4;
+            this.textBox4.Text = "20";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(6, 63);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(250, 17);
+            this.label7.TabIndex = 2;
+            this.label7.Text = "Enter XP ammount you got for one kill:";
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(9, 83);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(291, 22);
+            this.textBox5.TabIndex = 5;
+            this.textBox5.Text = "92";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(6, 108);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(146, 17);
+            this.label8.TabIndex = 4;
+            this.label8.Text = "Mob Kills Required: 5.";
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(9, 128);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(291, 23);
+            this.button3.TabIndex = 6;
+            this.button3.Text = "Compute";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(366, 301);
+            this.ClientSize = new System.Drawing.Size(679, 301);
+            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -179,6 +256,8 @@
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -197,6 +276,13 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Label label6;
     }
 }
 

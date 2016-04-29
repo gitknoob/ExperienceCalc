@@ -50,5 +50,18 @@ namespace ExperienceCalc
                     (aExpTable[Int32.Parse(textBox3.Text)] - aExpTable[Int32.Parse(textBox2.Text)]).ToString() + ".";
             } catch { };
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                label8.Text =
+                    "Mob Kills Required: " +
+                    (Math.Ceiling((decimal)
+                    (aExpTable[Int32.Parse(textBox4.Text) + 1] - aExpTable[Int32.Parse(textBox4.Text)])
+                    /Int32.Parse(textBox5.Text))).ToString() + ".";
+            }
+            catch { };
+        }
     }
 }
